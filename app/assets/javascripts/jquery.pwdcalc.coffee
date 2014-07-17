@@ -44,7 +44,7 @@ class @Pwdcalc
 
   showStrength: (strength, i18nStrength, pwd, requiredChars) ->
     $strengthMeter = $('.pwdcalc', @$inputWrapper)
-    $score = $('.pwdcalc-score', @$inputWrapper)
+    $score = $('.pwdcalc_simple', @$inputWrapper)
     if not pwd.length or (requiredChars and pwd.length < requiredChars)
       $strengthMeter.hide().empty()
       $score.hide()

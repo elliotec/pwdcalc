@@ -67,7 +67,7 @@ https://github.com/trimentor/pwdcalc/blob/master/LICENSE
     Pwdcalc.prototype.showStrength = function(strength, i18nStrength, pwd, requiredChars) {
       var $score, $strengthMeter;
       $strengthMeter = $('.pwdcalc', this.$inputWrapper);
-      $score = $('.pwdcalc-score', this.$inputWrapper);
+      $score = $('.pwdcalc_simple', this.$inputWrapper);
       if (!pwd.length || (requiredChars && pwd.length < requiredChars)) {
         $strengthMeter.hide().empty();
         return $score.hide();

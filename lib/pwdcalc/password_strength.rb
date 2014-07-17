@@ -1,7 +1,7 @@
 module Pwdcalc
   module PasswordStrength
     def password_strength_score
-      template.content_tag(:div, :class => "pwdcalc-score") do
+      template.content_tag(:div, :class => "user_password") do
         template.content_tag(:span) do
           template.content_tag(:b, "")
         end
